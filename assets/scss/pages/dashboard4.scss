@@ -1,0 +1,75 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+@import '../variable';
+/*******************
+ Sales overview Chart 1
+*******************/
+#ct-sales3-chart{
+    .ct-series-a {
+        .ct-bar {
+            stroke: rgba(57, 139, 247, 1);
+        }
+    }
+    .ct-series-b {
+        .ct-bar {
+            stroke: rgba(57, 139, 247, 0.8);
+        }
+    }
+    .ct-series-c {
+        .ct-bar {
+            stroke: rgba(57, 139, 247, 0.4);
+        }
+    }
+}
+/*******************
+ Sales overview Chart 2
+*******************/
+#sales-overview2{
+    .ct-point{
+        stroke-width:6px;
+        stroke:$info; 
+    }
+    .ct-grid{
+        stroke-dasharray:0px;
+        stroke:$border;
+        
+    }
+    .ct-area{
+        fill-opacity:0;
+    }
+    .ct-line{
+        stroke-width:3px;
+        stroke:$info;
+    }
+}
+
+.browser td {
+    vertical-align: middle;
+    padding-left: 0px;
+}
+
+/*******************
+ Project of the month
+*******************/
+.pro-of-month{
+    h6{
+        font-weight:500;
+        margin-bottom:0px;
+    }
+}
+/*******************
+ This is for responsive dashboard1 element
+*******************/
+@media(max-width:1023px) {
+.r-aside{
+        padding-right:30px;
+    }
+    .right-side-panel{
+        display:none;
+    }
+}    

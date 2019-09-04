@@ -1,0 +1,59 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+@import '../variable'; 
+
+/*******************
+Icon list fontawesom
+******************/
+.icon-list-demo {
+  div {
+    cursor: pointer;
+    line-height: 60px;
+    white-space: nowrap;
+    color: $bodytext;
+
+    &:hover {
+      color: $dark;
+    }
+
+    p{
+      margin:10px 0;
+      padding:5px 0;
+    }
+  }
+  i {
+    -webkit-transition: all 0.2s;
+    -webkit-transition: font-size .2s;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 15px 0 10px;
+    text-align: left;
+    transition: all 0.2s;
+    transition: font-size .2s;
+    vertical-align: middle;
+    
+    
+    transition: all 0.3s ease 0s;
+  }
+  .col-md-4, .col-3 {
+    border-radius:$radius;
+    &:hover {
+      background-color: $extra-light;
+    }
+
+  }
+}
+.icon-list-demo .div:hover i {
+      font-size:2em;
+      
+    }
+/*******************
+Icon list material icon
+******************/
+.material-icon-list-demo .mdi{
+    font-size:21px;
+}

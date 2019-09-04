@@ -1,0 +1,27 @@
+/*******************/
+/*Msg box*/
+/*******************/
+.msg-item{
+    margin-bottom:20px;
+}
+.msg-body{
+    background:$white;
+    padding:15px;
+    font-size:14px;
+    position:relative;
+    .dwn-aro{
+        width: 0;
+        position: absolute;
+        bottom:-8px; 
+        height: 0;
+        left:10px; 
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid $white;
+    }
+}
+
+.m-pic img{
+    width:40px;
+    border-radius:100%;
+}

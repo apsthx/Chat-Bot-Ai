@@ -1,0 +1,75 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*******************
+Form icheck
+******************/
+.icolors,
+.icheck-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.icolors > li {
+  padding: 0;
+  margin: 2px;
+  float: left;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: #263238;
+  text-align: center; }
+
+.icolors > li.active:after {
+  content: "\2713 ";
+  color: #ffffff;
+  line-height: 30px; }
+
+.icolors > li:first-child {
+  margin-left: 0; }
+
+.icolors > li.orange {
+  background: #ef5350; }
+
+.icolors > li.yellow {
+  background: #ffb22b; }
+
+.icolors > li.info {
+  background: #398bf7; }
+
+.icolors > li.green {
+  background: #06d79c; }
+
+.icolors > li.red {
+  background: #fb3a3a; }
+
+.icolors > li.purple {
+  background: #7460ee; }
+
+.icolors > li.blue {
+  background: #02bec9; }
+
+.icheck-list {
+  float: left;
+  padding-right: 50px;
+  padding-top: 10px; }
+
+.icheck-list li {
+  padding-bottom: 5px; }
+
+.icheck-list li label {
+  padding-left: 10px; }

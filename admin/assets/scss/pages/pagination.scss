@@ -1,0 +1,100 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+@import '../variable';  
+
+/*******************
+Pagination
+*******************/
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    border-bottom-left-radius: $radius;
+    border-top-left-radius: $radius;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-bottom-right-radius: $radius;
+    border-top-right-radius: $radius;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: $dark;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    background-color: $light;
+}
+
+.pagination-split li {
+    margin-left: 5px;
+    display: inline-block;
+    float: $lft;
+}
+
+.pagination-split li:first-child {
+    margin-left: 0;
+}
+
+.pagination-split li a {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: $themecolor;
+    border-color: $themecolor;
+}
+
+.pager li > a,
+.pager li > span {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    color: $dark;
+}
+
+/*******************
+Pagination
+******************/
+
+.pagination-circle {
+    li.active a {
+        background: $success;
+    }
+    li a {
+        width: 40px;
+        height: 40px;
+        background: $light;
+        border: 0px;
+        text-align: center;
+        border-radius: 100%;
+        &:first-child,
+        &:last-child {
+            border-radius: 100%;
+        }
+        &:hover {
+            background: $success;
+            color: $white;
+        }
+    }
+    li.disabled a {
+        background: $light;
+        color: $border;
+    }
+}
+

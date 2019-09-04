@@ -1,0 +1,144 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+@import '../variable';    
+/*******************
+ Card title
+*******************/
+.card-inverse .card-bodyquote .blockquote-footer,
+.card-inverse .card-link,
+.card-inverse .card-subtitle,
+.card-inverse .card-text {
+    color: rgba(255, 255, 255, .65);
+}
+
+.card-default{
+    .card-header{
+        background:$white;
+        border-bottom:0px;
+    }
+} 
+.card-success {
+    background: $success;
+    border-color: $success;
+}
+
+.card-danger {
+    background: $danger;
+    border-color: $danger;
+}
+
+.card-warning {
+    background: $warning;
+    border-color: $warning;
+}
+
+.card-info {
+    background: $info;
+    border-color: $info;
+}
+
+.card-primary {
+    background: $primary;
+    border-color: $primary;
+}
+
+.card-dark {
+    background: $inverse;
+    border-color: $inverse;
+}
+
+.card-megna {
+    background: $megna;
+    border-color: $megna;
+}
+
+/*============================================================== 
+ Cards page
+ ============================================================== */
+
+.card-actions {
+    float: $rgt;
+    a {
+        cursor: pointer;
+        color: $bodytext;
+        opacity: 0.7;
+        padding-left: 7px;
+        font-size: 13px;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.card-columns .card {
+    margin-bottom: 20px;
+}
+
+.collapsing {
+    -webkit-transition: height .08s ease;
+    transition: height .08s ease;
+}
+
+.card-info {
+    background: $info;
+    border-color: $info;
+}
+
+.card-primary {
+    background: $primary;
+    border-color: $primary;
+}
+
+.card-outline-info {
+    border-color: $info;
+    .card-header {
+        background: $info;
+        border-color: $info;
+    }
+}
+
+.card-outline-inverse {
+    border-color: $inverse;
+    .card-header {
+        background: $inverse;
+        border-color: $inverse;
+    }
+}
+
+.card-outline-warning {
+    border-color: $warning;
+    .card-header {
+        background: $warning;
+        border-color: $warning;
+    }
+}
+
+.card-outline-success {
+    border-color: $success;
+    .card-header {
+        background: $success;
+        border-color: $success;
+    }
+}
+
+.card-outline-danger {
+    border-color: $danger;
+    .card-header {
+        background: $danger;
+        border-color: $danger;
+    }
+}
+
+.card-outline-primary {
+    border-color: $primary;
+    .card-header {
+        background: $primary;
+        border-color: $primary;
+    }
+} 
+

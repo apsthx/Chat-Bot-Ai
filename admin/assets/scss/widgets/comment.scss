@@ -1,0 +1,53 @@
+/*******************/
+/*Comment widgets*/
+/*******************/
+
+.comment-widgets {
+    position: relative;
+    margin-bottom: 10px;
+    .comment-row {
+        border-bottom:1px solid $border;
+        padding: 15px;
+        &:last-child{
+            border-bottom:0px;
+        }
+        &:hover,
+        &.active {
+            background:$bglight;
+        }
+    }
+}
+
+.comment-text {
+    padding: 15px 15px 15px 20px;
+    width:80%;
+    &:hover .comment-footer,
+    &.active .comment-footer {
+        .action-icons {
+            visibility: visible;
+        }
+    }
+    p {
+        max-height: 50px;
+        width:100%;
+        overflow: hidden;
+        
+    } 
+}
+
+.comment-footer {
+    .action-icons {
+        visibility: hidden;
+        a {
+            padding-left: 7px;
+            vertical-align: middle;
+            color: $muted;
+            &:hover,
+            &.active {
+                color: $info;
+            }
+        }
+    }
+}
+
+

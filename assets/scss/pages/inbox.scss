@@ -1,0 +1,59 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+@import '../variable'; 
+
+
+/*******************
+Email inbox Page
+******************/
+.inbox-panel{
+    .list-group{
+        .list-group-item{
+            border:0px;
+            border-radius: 0px;
+            border-left:3px solid transparent;
+            a{
+                color:$bodytext;
+            }
+            &.active, &:hover{
+                background: $light;
+                border-left:3px solid $themecolor;
+            }
+            &:hover{
+               
+            }
+        }
+         
+    }
+}
+.inbox-center{
+  .unread td{
+    font-weight:400;
+  }
+    td{
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .max-texts{
+       
+    }
+  a{
+    color:$bodytext;
+    padding:2px 0 3px 0;
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+    .checkbox{
+        margin-top: -13px;
+        height: 20px;
+    }
+
+}
+

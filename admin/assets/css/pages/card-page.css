@@ -1,0 +1,123 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*******************
+ Card title
+*******************/
+.card-inverse .card-bodyquote .blockquote-footer,
+.card-inverse .card-link,
+.card-inverse .card-subtitle,
+.card-inverse .card-text {
+  color: rgba(255, 255, 255, 0.65); }
+
+.card-default .card-header {
+  background: #ffffff;
+  border-bottom: 0px; }
+
+.card-success {
+  background: #06d79c;
+  border-color: #06d79c; }
+
+.card-danger {
+  background: #ef5350;
+  border-color: #ef5350; }
+
+.card-warning {
+  background: #ffb22b;
+  border-color: #ffb22b; }
+
+.card-info {
+  background: #398bf7;
+  border-color: #398bf7; }
+
+.card-primary {
+  background: #745af2;
+  border-color: #745af2; }
+
+.card-dark {
+  background: #2f3d4a;
+  border-color: #2f3d4a; }
+
+.card-megna {
+  background: #56c0d8;
+  border-color: #56c0d8; }
+
+/*============================================================== 
+ Cards page
+ ============================================================== */
+.card-actions {
+  float: right; }
+  .card-actions a {
+    cursor: pointer;
+    color: #67757c;
+    opacity: 0.7;
+    padding-left: 7px;
+    font-size: 13px; }
+    .card-actions a:hover {
+      opacity: 1; }
+
+.card-columns .card {
+  margin-bottom: 20px; }
+
+.collapsing {
+  -webkit-transition: height .08s ease;
+  -o-transition: height .08s ease;
+  transition: height .08s ease; }
+
+.card-info {
+  background: #398bf7;
+  border-color: #398bf7; }
+
+.card-primary {
+  background: #745af2;
+  border-color: #745af2; }
+
+.card-outline-info {
+  border-color: #398bf7; }
+  .card-outline-info .card-header {
+    background: #398bf7;
+    border-color: #398bf7; }
+
+.card-outline-inverse {
+  border-color: #2f3d4a; }
+  .card-outline-inverse .card-header {
+    background: #2f3d4a;
+    border-color: #2f3d4a; }
+
+.card-outline-warning {
+  border-color: #ffb22b; }
+  .card-outline-warning .card-header {
+    background: #ffb22b;
+    border-color: #ffb22b; }
+
+.card-outline-success {
+  border-color: #06d79c; }
+  .card-outline-success .card-header {
+    background: #06d79c;
+    border-color: #06d79c; }
+
+.card-outline-danger {
+  border-color: #ef5350; }
+  .card-outline-danger .card-header {
+    background: #ef5350;
+    border-color: #ef5350; }
+
+.card-outline-primary {
+  border-color: #745af2; }
+  .card-outline-primary .card-header {
+    background: #745af2;
+    border-color: #745af2; }

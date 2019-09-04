@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "thbanks";
+    src: url('../fonts/thbanks.eot');
+    src: url('../fonts/thbanks.eot?#iefix') format('eot'),
+        url('../fonts/thbanks.woff') format('woff'),
+        url('../fonts/thbanks.ttf') format('truetype'),
+        url('../fonts/thbanks.svg#thbanks') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.thbanks:before {
+    display: inline-block;
+    font-family: "thbanks";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 5px;
+    font-size: 20px;
+    color:#fff;
+    padding: 2px;        
+}
+
+.thbanks-baac:before { content: "\EA01";background-color: #4b9b1d; }
+.thbanks-bay:before { content: "\EA02";background-color: #fec43b; }
+.thbanks-bbl:before { content: "\EA03";background-color: #1e4598; }
+.thbanks-gsb:before { content: "\EA0B";background-color: #eb198d; }
+.thbanks-kbank:before { content: "\EA10";background-color: #138f2d; }
+.thbanks-ktb:before { content: "\EA12";background-color: #1ba5e1; }
+.thbanks-scb:before { content: "\EA19";background-color: #4e2e7f; }
+.thbanks-tbank:before { content: "\EA1B";background-color: #fc4f1f; }
+.thbanks-tmb:before { content: "\EA1E";background-color: #1279be; }
+

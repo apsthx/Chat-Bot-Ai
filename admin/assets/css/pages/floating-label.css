@@ -1,0 +1,153 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*******************/
+/*Floating Label*/
+/*******************/
+.floating-labels .form-group {
+  position: relative; }
+
+.floating-labels .form-control {
+  padding: 10px 10px 10px 0;
+  display: block;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0px;
+  border-bottom: 1px solid #e9edf2; }
+  .floating-labels .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.floating-labels select.form-control > option {
+  font-size: 14px; }
+
+.floating-labels .has-error .form-control {
+  border-bottom: 1px solid #ef5350; }
+
+.floating-labels .has-warning .form-control {
+  border-bottom: 1px solid #ffb22b; }
+
+.floating-labels .has-success .form-control {
+  border-bottom: 1px solid #06d79c; }
+
+.floating-labels .form-control:focus {
+  outline: none;
+  border: none; }
+
+.floating-labels label {
+  color: #67757c;
+  position: absolute;
+  cursor: auto;
+  top: 5px;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all; }
+
+.floating-labels .focused label {
+  top: -20px;
+  font-size: 12px;
+  color: #263238; }
+
+.floating-labels .bar {
+  position: relative;
+  display: block; }
+
+.floating-labels .bar:before,
+.floating-labels .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #398bf7;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all; }
+
+.floating-labels .bar:before {
+  left: 50%; }
+
+.floating-labels .bar:after {
+  right: 50%; }
+
+.floating-labels .form-control:focus ~ .bar:before,
+.floating-labels .form-control:focus ~ .bar:after {
+  width: 50%; }
+
+.floating-labels .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5; }
+
+.floating-labels .input-lg ~ label,
+.floating-labels .input-lg {
+  font-size: 24px; }
+
+.floating-labels .input-sm ~ label,
+.floating-labels .input-sm {
+  font-size: 16px; }
+
+.has-warning .bar:before,
+.has-warning .bar:after {
+  background: #ffb22b; }
+
+.has-success .bar:before,
+.has-success .bar:after {
+  background: #06d79c; }
+
+.has-error .bar:before,
+.has-error .bar:after {
+  background: #ef5350; }
+
+.has-warning .form-control:focus ~ label,
+.has-warning .form-control:valid ~ label {
+  color: #ffb22b; }
+
+.has-success .form-control:focus ~ label,
+.has-success .form-control:valid ~ label {
+  color: #06d79c; }
+
+.has-error .form-control:focus ~ label,
+.has-error .form-control:valid ~ label {
+  color: #ef5350; }
+
+.has-feedback label ~ .t-0 {
+  top: 0; }
+
+.form-group.error input, .form-group.error select, .form-group.error textarea {
+  border: 1px solid #ef5350; }
+
+.form-group.validate input, .form-group.validate select, .form-group.validate textarea {
+  border: 1px solid #06d79c; }
+
+.form-group.error .help-block ul {
+  padding: 0px;
+  color: #ef5350; }
+  .form-group.error .help-block ul li {
+    list-style: none; }
+
+.form-group.issue .help-block ul {
+  padding: 0px;
+  color: #ffb22b; }
+  .form-group.issue .help-block ul li {
+    list-style: none; }

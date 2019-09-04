@@ -1,0 +1,416 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+@import '../variable'; 
+
+
+/*******************
+ribbons page
+******************/
+.ribbon-wrapper,
+.ribbon-wrapper-reverse,
+.ribbon-wrapper-bottom,
+.ribbon-wrapper-right-bottom {
+    position: relative;
+    
+    padding: 50px 15px 15px 15px;
+}
+.ribbon-vwrapper{
+    padding: 15px 15px 15px 50px;
+    position: relative;
+   
+}
+.ribbon-overflow {
+    overflow: hidden;
+}
+
+.ribbon-vwrapper-reverse {
+    padding: 15px 50px 15px 15px;
+    
+}
+
+.ribbon-wrapper-bottom {
+    padding: 15px 15px 50px 50px;
+}
+
+.ribbon-wrapper-right-bottom {
+    padding: 15px 50px 50px 15px;
+}
+.ribbon-content{
+    margin-bottom: 0px;
+}
+.ribbon {
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    clear: left;
+    position: absolute;
+    top: 12px;
+    left: -2px;
+    color: $white;
+}
+
+.ribbon-bookmark:before {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 15px solid $dark;
+    border-right: 10px solid transparent;
+}
+
+.ribbon-right {
+    left: auto;
+    right: -2px;
+}
+
+.ribbon-bookmark.ribbon-right:before {
+    right: 100%;
+    left: auto;
+    border-right: 15px solid $dark;
+    border-left: 10px solid transparent;
+}
+
+.ribbon-vertical-l,
+.ribbon-vertical-r {
+    clear: none;
+    padding: 0 5px;
+    height: 70px;
+    width: 30px;
+    line-height: 70px;
+    text-align: center;
+    left: 12px;
+    top: -2px;
+}
+
+.ribbon-vertical-r {
+    left: auto;
+    right: 12px;
+}
+
+.ribbon-bookmark.ribbon-vertical-l:before,
+.ribbon-bookmark.ribbon-vertical-r:before {
+    top: 100%;
+    left: 0;
+    margin-top: -14px;
+    border-right: 15px solid $dark;
+    border-bottom: 10px solid transparent;
+}
+
+.ribbon-badge {
+    top: 15px;
+    overflow: hidden;
+    left: -90px;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.ribbon-badge.ribbon-right {
+    left: auto;
+    right: -90px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ribbon-badge.ribbon-bottom {
+    top: auto;
+    bottom: 15px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ribbon-badge.ribbon-right.ribbon-bottom {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.ribbon-corner {
+    top: 0;
+    left: 0;
+    background-color: transparent!important;
+    padding: 6px 0 0 10px;
+}
+
+.ribbon-corner i {
+    position: relative;
+}
+
+.ribbon-corner:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 30px solid transparent;
+    border-top-color: $themecolor;
+    border-left-color: $themecolor;
+    ;
+}
+
+.ribbon-corner.ribbon-right:before {
+    right: 0;
+    left: auto;
+    border-right-color: #526069;
+    border-left-color: transparent;
+}
+
+.ribbon-corner.ribbon-right {
+    right: 0;
+    left: auto;
+    padding: 6px 10px 0 0;
+}
+
+.ribbon-corner.ribbon-bottom:before {
+    top: auto;
+    bottom: 0;
+    border-top-color: transparent;
+    border-bottom-color: #526069;
+}
+
+.ribbon-corner.ribbon-bottom {
+    bottom: 0;
+    top: auto;
+    padding: 0 10px 6px 10px;
+}
+
+.ribbon-custom {
+    background: $themecolor;
+}
+
+.ribbon-bookmark.ribbon-right.ribbon-custom:before {
+    border-right-color: $themecolor;
+    border-left-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-vertical-l.ribbon-custom:before,
+.ribbon-bookmark.ribbon-vertical-r.ribbon-custom:before {
+    border-right-color: $themecolor;
+    border-bottom-color: transparent;
+}
+
+.ribbon-primary {
+    background: $primary;
+}
+
+.ribbon-bookmark.ribbon-primary:before {
+    border-color: $primary;
+    border-right-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-right.ribbon-primary:before {
+    border-right-color: $primary;
+    border-left-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-vertical-l.ribbon-primary:before,
+.ribbon-bookmark.ribbon-vertical-r.ribbon-primary:before {
+    border-right-color: $primary;
+    border-bottom-color: transparent;
+}
+
+.ribbon-primary.ribbon-corner:before {
+    border-top-color: $primary;
+    border-left-color: $primary;
+}
+
+.ribbon-primary.ribbon-corner.ribbon-right:before {
+    border-right-color: $primary;
+    border-left-color: transparent;
+}
+
+.ribbon-primary.ribbon-corner.ribbon-bottom:before {
+    border-top-color: transparent;
+    border-bottom-color: $primary;
+}
+
+.ribbon-success {
+    background: $success;
+}
+
+.ribbon-bookmark.ribbon-success:before {
+    border-color: $success;
+    border-right-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-right.ribbon-success:before {
+    border-right-color: $success;
+    border-left-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-vertical-l.ribbon-success:before,
+.ribbon-bookmark.ribbon-vertical-r.ribbon-success:before {
+    border-right-color: $success;
+    border-bottom-color: transparent;
+}
+
+.ribbon-success.ribbon-corner:before {
+    border-top-color: $success;
+    border-left-color: $success;
+}
+
+.ribbon-success.ribbon-corner.ribbon-right:before {
+    border-right-color: $success;
+    border-left-color: transparent;
+}
+
+.ribbon-success.ribbon-corner.ribbon-bottom:before {
+    border-top-color: transparent;
+    border-bottom-color: $success;
+}
+
+.ribbon-info {
+    background: $info;
+}
+
+.ribbon-bookmark.ribbon-info:before {
+    border-color: $info;
+    border-right-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-right.ribbon-info:before {
+    border-right-color: $info;
+    border-left-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-vertical-l.ribbon-info:before,
+.ribbon-bookmark.ribbon-vertical-r.ribbon-info:before {
+    border-right-color: $info;
+    border-bottom-color: transparent;
+}
+
+.ribbon-info.ribbon-corner:before {
+    border-top-color: $info;
+    border-left-color: $info;
+}
+
+.ribbon-info.ribbon-corner.ribbon-right:before {
+    border-right-color: $info;
+    border-left-color: transparent;
+}
+
+.ribbon-info.ribbon-corner.ribbon-bottom:before {
+    border-top-color: transparent;
+    border-bottom-color: $info;
+}
+
+.ribbon-warning {
+    background: $warning;
+}
+
+.ribbon-bookmark.ribbon-warning:before {
+    border-color: $warning;
+    border-right-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-right.ribbon-warning:before {
+    border-right-color: $warning;
+    border-left-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-vertical-l.ribbon-warning:before,
+.ribbon-bookmark.ribbon-vertical-r.ribbon-warning:before {
+    border-right-color: $warning;
+    border-bottom-color: transparent;
+}
+
+.ribbon-warning.ribbon-corner:before {
+    border-top-color: $warning;
+    border-left-color: $warning;
+}
+
+.ribbon-warning.ribbon-corner.ribbon-right:before {
+    border-right-color: $warning;
+    border-left-color: transparent;
+}
+
+.ribbon-warning.ribbon-corner.ribbon-bottom:before {
+    border-top-color: transparent;
+    border-bottom-color: $warning;
+}
+
+.ribbon-danger {
+    background: $danger;
+} 
+
+.ribbon-bookmark.ribbon-danger:before {
+    border-color: $danger;
+    border-right-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-right.ribbon-danger:before {
+    border-right-color: $danger;
+    border-left-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-vertical-l.ribbon-danger:before,
+.ribbon-bookmark.ribbon-vertical-r.ribbon-danger:before {
+    border-right-color:$danger;
+    border-bottom-color: transparent;
+}
+
+.ribbon-danger.ribbon-corner:before {
+    border-top-color: $danger;
+    border-left-color: $danger;
+}
+
+.ribbon-danger.ribbon-corner.ribbon-right:before {
+    border-right-color: $danger;
+    border-left-color: transparent;
+}
+
+.ribbon-danger.ribbon-corner.ribbon-bottom:before {
+    border-top-color: transparent;
+    border-bottom-color: $danger;
+}
+
+.ribbon-default {
+    background: $dark;
+}
+
+.ribbon-bookmark.ribbon-default:before {
+    border-color: $dark;
+    border-right-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-right.ribbon-default:before {
+    border-right-color: $dark;
+    border-left-color: transparent;
+}
+
+.ribbon-bookmark.ribbon-vertical-l.ribbon-default:before,
+.ribbon-bookmark.ribbon-vertical-r.ribbon-default:before {
+    border-right-color: $dark;
+    border-bottom-color: transparent;
+}
+
+.ribbon-default.ribbon-corner:before {
+    border-top-color: $dark;
+    border-left-color: $dark;
+}
+
+.ribbon-default.ribbon-corner.ribbon-right:before {
+    border-right-color: $dark;
+    border-left-color: transparent;
+}
+
+.ribbon-default.ribbon-corner.ribbon-bottom:before {
+    border-top-color: transparent;
+    border-bottom-color: $dark;
+}

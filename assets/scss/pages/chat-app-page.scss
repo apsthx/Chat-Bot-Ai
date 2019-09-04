@@ -1,0 +1,105 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+@import '../variable'; 
+
+/*******************
+chat application Page
+******************/
+
+.chat-main-box {
+    position: relative;
+    
+    overflow: hidden;
+    .chat-left-aside {
+        position: relative;
+        width: 250px;
+        float: left;
+        z-index: 9;
+        top: 0px;
+        border-right: 1px solid $border;
+        .open-panel {
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            left: -webkit-calc(100% - 1px);
+            top: 50%;
+            z-index: 100;
+            background-color: #fff;
+            -webkit-box-shadow: 1px 0 3px rgba(0, 0, 0, .2);
+            box-shadow: 1px 0 3px rgba(0, 0, 0, .2);
+            border-radius: 0 100px 100px 0;
+            line-height: 1;
+            padding: 15px 8px 15px 4px;
+        }
+        .chat-left-inner {
+            position: relative;
+            .chatonline{
+                position: relative;
+                height: 90%;
+            }
+            .form-control {
+                height: 60px;
+                padding:15px;
+                background-image:linear-gradient($info, $info),linear-gradient($border, $border);
+            }
+            .style-none {
+                padding: 0px;
+                li {
+                    list-style: none;
+                    overflow: hidden;
+                    a {
+                        padding: 20px;
+                        &:hover,
+                        &.active {
+                            background: $extra-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .chat-right-aside {
+        width: calc(100% - 250px);
+        float:left;
+        .chat-rbox{
+            height: auto;
+            position: relative;
+        }
+        .chat-list {
+            max-height: none;
+            height: 100%;
+            padding-top: 40px;
+            .chat-text {
+                border-radius: 6px;
+            }
+        }
+        .send-chat-box {
+            position: relative;
+            .form-control {
+                border: none;
+                border-top: 1px solid $border;
+                resize: none;
+                height: 80px;
+                padding-right: 180px;
+                &:focus {
+                    border-color: $border; 
+                }
+            }
+            .custom-send {
+                position: absolute;
+                right: 20px;
+                bottom: 10px;
+                .cst-icon {
+                    color: $bodytext;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+

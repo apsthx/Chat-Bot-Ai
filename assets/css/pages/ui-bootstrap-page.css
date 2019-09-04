@@ -1,0 +1,50 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*============================================================== 
+ Ui-bootstrap
+ ============================================================== */
+ul.list-icons {
+  margin: 0px;
+  padding: 0px; }
+  ul.list-icons li {
+    list-style: none;
+    line-height: 30px;
+    margin: 5px 0;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in; }
+    ul.list-icons li a {
+      color: #67757c; }
+      ul.list-icons li a:hover {
+        color: #398bf7; }
+    ul.list-icons li i {
+      font-size: 13px;
+      padding-right: 8px; }
+
+ul.list-inline li {
+  display: inline-block;
+  padding: 0 8px; }
+
+ul.two-part {
+  margin: 0px; }
+  ul.two-part li {
+    width: 48.8%; }
+
+/*Accordion*/
+html body .accordion .card {
+  margin-bottom: 0px; }

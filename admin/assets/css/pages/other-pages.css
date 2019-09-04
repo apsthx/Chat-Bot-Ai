@@ -1,0 +1,139 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*******************
+FAQs Page
+******************/
+.minimal-faq .card {
+  border: 0px; }
+  .minimal-faq .card .card-header {
+    background: #ffffff;
+    padding: 20px 0;
+    margin-top: 10px; }
+  .minimal-faq .card .card-body {
+    padding: 15px 0px; }
+
+/*******************
+Seach listing Page
+******************/
+.search-listing {
+  padding: 0px;
+  margin: 0px; }
+  .search-listing li {
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
+    .search-listing li h3 {
+      margin: 0px;
+      font-size: 18px; }
+      .search-listing li h3 a {
+        color: #398bf7; }
+        .search-listing li h3 a:hover {
+          text-decoration: underline; }
+    .search-listing li a {
+      color: #06d79c; }
+
+/*******************
+Gridstack Dragable portlet
+******************/
+.grid-stack-item-content {
+  background: #fff;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 20px; }
+
+.grid-stack > .grid-stack-item > .grid-stack-item-content {
+  border: 1px solid rgba(120, 130, 140, 0.13); }
+
+/*******************
+Grid page
+******************/
+.show-grid {
+  margin-bottom: 10px;
+  padding: 0 15px; }
+
+.show-grid [class^=col-] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #b1b8bb;
+  background-color: #e9edf2; }
+
+/*******************
+Date paginator page
+******************/
+.dp-selected[style] {
+  background-color: #398bf7 !important; }
+
+.datepaginator-sm .pagination li a,
+.datepaginator-lg .pagination li a,
+.datepaginator .pagination li a {
+  padding: 0 5px;
+  height: 60px;
+  border: 1px solid rgba(120, 130, 140, 0.13);
+  float: left;
+  position: relative; }
+
+/*******************
+Notification page Jquery toaster
+******************/
+.jq-icon-info {
+  background-color: #398bf7;
+  color: #ffffff; }
+
+.jq-icon-success {
+  background-color: #06d79c;
+  color: #ffffff; }
+
+.jq-icon-error {
+  background-color: #ef5350;
+  color: #ffffff; }
+
+.jq-icon-warning {
+  background-color: #ffb22b;
+  color: #ffffff; }
+
+.alert-rounded {
+  border-radius: 60px; }
+
+/*******************
+list and media
+******************/
+.list-group a.list-group-item:hover {
+  background: #e9edf2; }
+
+.list-group-item.active,
+.list-group .list-group-item.active:hover {
+  background: #398bf7;
+  border-color: #398bf7; }
+
+.list-group-item.disabled {
+  color: #99abb4;
+  background: #e9edf2; }
+
+.media {
+  border: 1px solid rgba(120, 130, 140, 0.13);
+  margin-bottom: 10px;
+  padding: 15px; }
+
+/*******************
+/*Documentation page
+******************/
+.plugin-details {
+  display: none; }
+
+.plugin-details-active {
+  display: block; }

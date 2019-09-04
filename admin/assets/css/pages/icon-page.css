@@ -1,0 +1,60 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*******************
+Icon list fontawesom
+******************/
+.icon-list-demo div {
+  cursor: pointer;
+  line-height: 60px;
+  white-space: nowrap;
+  color: #67757c; }
+  .icon-list-demo div:hover {
+    color: #263238; }
+  .icon-list-demo div p {
+    margin: 10px 0;
+    padding: 5px 0; }
+
+.icon-list-demo i {
+  -webkit-transition: all 0.2s;
+  -webkit-transition: font-size .2s;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 15px 0 10px;
+  text-align: left;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  -o-transition: font-size .2s;
+  transition: font-size .2s;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+
+.icon-list-demo .col-md-4, .icon-list-demo .col-3 {
+  border-radius: 4px; }
+  .icon-list-demo .col-md-4:hover, .icon-list-demo .col-3:hover {
+    background-color: #ebf3f5; }
+
+.icon-list-demo .div:hover i {
+  font-size: 2em; }
+
+/*******************
+Icon list material icon
+******************/
+.material-icon-list-demo .mdi {
+  font-size: 21px; }

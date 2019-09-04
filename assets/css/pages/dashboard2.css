@@ -1,0 +1,78 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*******************
+ Sales overview Chart
+*******************/
+#sales-overview2 .ct-point {
+  stroke-width: 6px;
+  stroke: #398bf7; }
+
+#sales-overview2 .ct-grid {
+  stroke-dasharray: 0px;
+  stroke: rgba(120, 130, 140, 0.13); }
+
+#sales-overview2 .ct-area {
+  fill-opacity: 0; }
+
+#sales-overview2 .ct-line {
+  stroke-width: 3px;
+  stroke: #398bf7; }
+
+.stats-bar .active {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.website-visitor .ct-series-a .ct-area {
+  fill-opacity: 0.2;
+  fill: url(#gradient); }
+
+.website-visitor .ct-series-a .ct-line, .website-visitor .ct-series-a .ct-point {
+  stroke: #06d79c;
+  stroke-width: 2px; }
+
+.website-visitor .ct-series-b .ct-area {
+  fill: #398bf7;
+  fill-opacity: 0.1; }
+
+.website-visitor .ct-series-b .ct-line, .website-visitor .ct-series-b .ct-point {
+  stroke: #398bf7;
+  stroke-width: 2px; }
+
+.website-visitor .ct-series-a .ct-point, .website-visitor .ct-series-b .ct-point {
+  stroke-width: 6px; }
+
+.c3-chart-arcs-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #67757c;
+  font-family: "Montserrat", sans-serif; }
+
+/*******************
+ Project of the month
+*******************/
+.pro-of-month h6 {
+  font-weight: 500;
+  margin-bottom: 0px; }
+
+/*******************
+ This is for responsive dashboard1 element
+*******************/
+@media (max-width: 1023px) {
+  .r-aside {
+    padding-right: 30px; }
+  .right-side-panel {
+    display: none; } }
