@@ -26,6 +26,6 @@ $config['line_key'] = 'HHXOfNneDeZU80h9cqdLVzHl68iuJvPHChW1X13fb04';
 
 Username admin
 
-Password apsTH@1990
+Password 1234
 
 # API OTP SMS http://bkkit.co.th 
