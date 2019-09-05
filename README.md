@@ -30,3 +30,5 @@ Username admin
 Password 1234
 
 # API OTP SMS http://bkkit.co.th 
+
+Dialogflow integrates with Line/Facebook https://cloud.google.com/dialogflow/docs/integrations/
