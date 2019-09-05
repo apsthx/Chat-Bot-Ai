@@ -1,5 +1,6 @@
 # Chat Bot Ai  # APSTH 
  Support Line and Facebook for dialogflow
+ มีคนถามเยอะระบบนี้เป็นตัวกลางที่ต่อเข้ากับ dialogflow ทำได้ทุกอย่างเหมือน dialogflow  แค่มาใช้ในรูปแบบ UI GUI นั้นการจัดการง่ายนั้นเองไม่ต้อง Code
  
 #Support PHP 7.1 + MySql 5.6+
  
