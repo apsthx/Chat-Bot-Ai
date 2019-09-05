@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 04, 2019 at 04:35 PM
+-- Generation Time: Sep 05, 2019 at 03:09 PM
 -- Server version: 10.1.41-MariaDB-0ubuntu0.18.04.1
 -- PHP Version: 7.1.14
 
@@ -178,13 +178,6 @@ CREATE TABLE `admin_check_login` (
   `regenerate_login` varchar(255) DEFAULT NULL,
   `login_last_time` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `admin_check_login`
---
-
-INSERT INTO `admin_check_login` (`login_id`, `admin_id`, `ip_address`, `regenerate_login`, `login_last_time`) VALUES
-(2, 1, '2403:6200:8837:f266:5ca1:30f5:6e8f:296e', '551299', '2019-09-04 16:35:05');
 
 -- --------------------------------------------------------
 
@@ -445,9 +438,8 @@ CREATE TABLE `log_admin_login` (
 
 INSERT INTO `log_admin_login` (`log_id`, `admin_id`, `log_text`, `log_ip_address`, `log_browser`, `log_time`) VALUES
 (1, 1, 'Login', '124.122.21.253', 'Chrome/73.0.3683.103 Windows 10 ', '2019-04-25 21:41:30'),
-(2, 1, 'Login', '2403:6200:8837:f266:5ca1:30f5:6e8f:296e', 'Chrome/76.0.3809.132 Windows 10 ', '2019-09-04 16:29:09'),
-(3, 1, 'Loout', '2403:6200:8837:f266:5ca1:30f5:6e8f:296e', 'Chrome/76.0.3809.132 Windows 10 ', '2019-09-04 16:31:28'),
-(4, 1, 'Login', '2403:6200:8837:f266:5ca1:30f5:6e8f:296e', 'Chrome/76.0.3809.132 Windows 10 ', '2019-09-04 16:35:05');
+(2, 1, 'Login', '2403:6200:8837:4afc:b556:1055:a08d:f8b', 'Chrome/76.0.3809.132 Windows 10 ', '2019-09-05 15:07:19'),
+(3, 1, 'Loout', '2403:6200:8837:4afc:b556:1055:a08d:f8b', 'Chrome/76.0.3809.132 Windows 10 ', '2019-09-05 15:07:47');
 
 -- --------------------------------------------------------
 
@@ -488,13 +480,6 @@ CREATE TABLE `log_send_sms` (
   `log_time` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `log_send_sms`
---
-
-INSERT INTO `log_send_sms` (`log_id`, `user_id`, `log_text`, `log_time`) VALUES
-(1, NULL, '(SMS OTP ระบบส่ง) รหัส OTP คือ 675798 (Ref No. 3594) ส่งไปยัง 0981816769', '2019-09-04 16:30:21');
-
 -- --------------------------------------------------------
 
 --
@@ -510,14 +495,6 @@ CREATE TABLE `log_user_login` (
   `log_token` text,
   `log_time` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `log_user_login`
---
-
-INSERT INTO `log_user_login` (`log_id`, `user_id`, `log_text`, `log_ip_address`, `log_browser`, `log_token`, `log_time`) VALUES
-(1, 1, 'Login', '2403:6200:8837:f266:5ca1:30f5:6e8f:296e', 'Chrome/76.0.3809.132 Windows 10 ', NULL, '2019-09-04 16:30:40'),
-(2, 1, 'Logout', '2403:6200:8837:f266:5ca1:30f5:6e8f:296e', 'Chrome/76.0.3809.132 Windows 10 ', NULL, '2019-09-04 16:31:05');
 
 -- --------------------------------------------------------
 
@@ -733,7 +710,7 @@ CREATE TABLE `setting` (
 --
 
 INSERT INTO `setting` (`from_email`, `from_name`, `smtp_host`, `smtp_user`, `smtp_password`, `smtp_port`, `smtp_secure`, `smtp_status`, `sms_tel`, `sms_username`, `sms_password`, `sms_credit`, `line_token`) VALUES
-('apsth456en@gmail.com', 'AI-APS ChatBot', 'smtp.gmail.com', 'apsth456en@gmail.com', 'apsTH@1990', 587, 'tls', 1, '0000', 'apsth2', '455555555', '0.00', NULL);
+('apsth456en@gmail.com', 'AI-APS ChatBot', 'smtp.gmail.com', 'apsth456en@gmail.com', '44444', 587, 'tls', 1, '0000', 'apsth2', '555555555555', '0.00', NULL);
 
 -- --------------------------------------------------------
 
@@ -752,13 +729,6 @@ CREATE TABLE `teams` (
   `teams_create` datetime DEFAULT NULL,
   `teams_update` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `teams`
---
-
-INSERT INTO `teams` (`teams_id`, `teams_code`, `teams_name`, `teams_status_id`, `package_id`, `teams_package_date`, `teams_package_expire`, `teams_create`, `teams_update`) VALUES
-(1, 'T001', 'apsth', 1, 1, '2019-09-04', '2019-10-04', '2019-09-04 16:30:34', '2019-09-04 16:30:34');
 
 -- --------------------------------------------------------
 
@@ -801,13 +771,6 @@ CREATE TABLE `user` (
   `user_create` datetime DEFAULT NULL,
   `user_update` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`user_id`, `username`, `password`, `user_email`, `user_fullname`, `user_tel`, `user_image`, `teams_id`, `role_id`, `user_status_id`, `user_address`, `user_comment`, `user_style`, `user_create`, `user_update`) VALUES
-(1, 'apsth', 'a85fd832fbbb365b3a86bc4b78d3fd42193cec30eea263aecd8d4e2c60cce265', 'apsth456@gmail.com', 'prasan srisopa', '0981816769', 'none.png', 1, 1, 1, NULL, NULL, 'purple-dark', '2019-09-04 16:30:34', '2019-09-04 16:30:34');
 
 -- --------------------------------------------------------
 
@@ -1108,7 +1071,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `admin_check_login`
 --
 ALTER TABLE `admin_check_login`
-  MODIFY `login_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `login_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `agent`
@@ -1162,7 +1125,7 @@ ALTER TABLE `image`
 -- AUTO_INCREMENT for table `log_admin_login`
 --
 ALTER TABLE `log_admin_login`
-  MODIFY `log_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `log_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `log_agent`
@@ -1180,13 +1143,13 @@ ALTER TABLE `log_package`
 -- AUTO_INCREMENT for table `log_send_sms`
 --
 ALTER TABLE `log_send_sms`
-  MODIFY `log_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `log_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `log_user_login`
 --
 ALTER TABLE `log_user_login`
-  MODIFY `log_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `log_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `package`
@@ -1222,7 +1185,7 @@ ALTER TABLE `ref_user_status`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `teams_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `teams_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `training`
@@ -1234,13 +1197,13 @@ ALTER TABLE `training`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user_check_login`
 --
 ALTER TABLE `user_check_login`
-  MODIFY `login_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `login_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
