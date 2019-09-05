@@ -1,9 +1,9 @@
-# Chat Bot Ai
+# Chat Bot Ai  # APSTH 
  Support Line and Facebook for dialogflow
  
- # APSTH 
+#Support PHP 7.1 + MySql 5.6+
  
- # Setup MySQL database change to path 
+# Setup MySQL database change to path 
 1. /admin/application/config/database.php
 2. /application/config/database.php
 
